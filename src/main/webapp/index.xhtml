@@ -9,12 +9,31 @@
 	<title>Avaliação</title>
 </h:head>
 <h:body>
-
+<h:panelGrid columns="2" >
 	<p:growl id="msgs" showDetail="false" life="7000" sticky="false" autoUpdate="true"/>
 
 	
+	<h:outputText value="Medicamento" />
+	<p:inputText />
 	
+	<h:outputText value="Data de Produção" />
+	<p:calender showOn="button" navigator="true" effect="explode" />
 	
+	<h:outputText value="Data de Vencimento" />
+	<p:calender showOn="button" navigator="true" effect="explode" />
+	
+	<h:outputText value="Estoque" />
+	<p:inputText />
+	
+	<h:outputText value="Preço" />
+	<p:inputText />
+	
+	</h:panelGrid>
+	
+	<h:commandButton value="" icon="ui-icon-plus"/>
+	<h:commandButton value="" icon="ui-icon-save" />
+	<h:commandButton value="" icon="ui-icon-pencil" />
+	<h:commandButton value="" icon="ui-icon-close"/>
 
 
 
